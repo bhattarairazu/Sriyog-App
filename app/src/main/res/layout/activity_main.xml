@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.manjil.sriyogapp.MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/mimageview"
+        android:layout_width="256dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/bibaranbharnuhos"/>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:id="@+id/cardies"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0.5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorwhite">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtfullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/puraname"
+                    android:textStyle="normal"
+                    android:textSize="20dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtfullname"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/outline"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"/>
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_12"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/address"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="ठेगाना:"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:textSize="20dp"/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_address"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:background="@drawable/outline"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="26dp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtcity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shahar"
+                    android:textStyle="normal"
+                    android:weightSum="1"
+                    android:textSize="20dp"/>
+
+
+                <Spinner
+                    android:id="@+id/spinnercity"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:entries="@array/spinnercity"
+                    android:prompt="@string/city_prompt"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/outline"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/drop_down"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textStyle="normal"
+                    android:textSize="20dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:inputType="number"
+                    android:background="@drawable/outline" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtsamuha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shamuha"
+                    android:textStyle="normal"
+                    android:textSize="20dp"/>
+
+
+                <Spinner
+                    android:id="@+id/spinnersamuha"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:entries="@array/spinnerjob"
+                    android:prompt="@string/job_prompt"
+                    android:background="@drawable/outline"
+                    android:layout_marginLeft="35dp"
+                    android:weightSum="1"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtbibaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bibaran"
+                    android:textStyle="normal"
+                    android:textSize="20dp"/>
+
+
+                <EditText
+                    android:id="@+id/edtbibaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/outline" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/photo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/photo"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:textSize="20dp"/>-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnphoto"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:hint="फोटो हाल्नुहोस :"-->
+
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/mtext_hide"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="1 photo is selected"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#f23636"-->
+                <!--/>-->
+
+            <LinearLayout
+                android:id="@+id/linears"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/linear_layout"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/btnsend"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:foreground="@drawable/rippleface"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_width="115dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="40"
+                    android:foreground="@drawable/rippleface"
+                    android:text="@string/cancel"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="cancel"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+</ScrollView>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

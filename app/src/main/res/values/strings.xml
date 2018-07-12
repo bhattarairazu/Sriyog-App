@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sriyog App</string>
+    <string name="bibaranbharnuhos" translatable="false">पार्ट टाइम कामको लागि विवरण भर्नुहोस्</string>
+    <string name="puraname" translatable="false">पुरा नाम:</string>
+    <string name="shahar" translatable="false">शहर :</string>
+    <string name="city_prompt">Choose</string>
+
+    <string-array name="spinnercity">
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+    <string name="job_prompt">Choose</string>
+
+    <string-array name="spinnerjob">
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+
+
+
+
+
+    <string name="phone" translatable="false">फोन :</string>
+    <string name="shamuha" translatable="false">समुह :</string>
+    <string name="bibaran" translatable="false">विवरण :</string>
+    <string name="photo" translatable="false">फोटो :</string>
+    <string name="submit" translatable="false">भर्नुहोस् </string>
+    <string name="cancel" translatable="false">रद्द गर्नुहोस् </string>
+    <string name="upload" translatable="false">फोटो हाल्नुहोस :</string>
+</resources>
